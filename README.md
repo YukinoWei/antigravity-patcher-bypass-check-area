@@ -23,8 +23,8 @@
 
 
 2.手动安装：
-将 agy-capsule 文件夹复制到 Antigravity 插件目录：
-Windows: %USERPROFILE%\.gemini\config\plugins
+将antigravity-patcher-bypass-check-area文件夹复制到 Antigravity 插件目录：
+Windows: \.gemini\config\plugins\
 macOS / Linux: ~/.gemini/config/plugins/
 
 ## 声明
