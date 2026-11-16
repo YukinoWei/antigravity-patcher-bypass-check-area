@@ -17,6 +17,11 @@
 ## 安装
 1.自动安装：
 使用agent帮助安装，下载Releases文件，解压放在一个文件夹，直接让agent安装到antigravity插件目录
+
+
+
+
+
 2.手动安装：
 将 agy-capsule 文件夹复制到 Antigravity 插件目录：
 Windows: %USERPROFILE%\.gemini\config\plugins
