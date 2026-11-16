@@ -15,6 +15,8 @@
 - **可回滚**：`ag2 heal --restore` 还原二进制；`ag2 uninstall` 只删自己创建的文件，`app.asar` 全程只读。
 
 ## 安装
+0.使用agent帮助安装，下载Releases文件，解压放在一个文件夹，直接让agent安装到antigravity插件目录
+
 
 1. 解压发布包（或克隆源码），在插件目录执行一键安装：
 
