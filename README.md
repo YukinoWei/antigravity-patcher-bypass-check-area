@@ -23,7 +23,7 @@
 
 
 2.手动安装：
-将antigravity-patcher-bypass-check-area文件夹复制到 Antigravity 插件目录：
+将解压之后的antigravity2-plugin-1.1.0文件夹复制到 Antigravity 插件目录：
 
 
 Windows: \.gemini\config\plugins\
