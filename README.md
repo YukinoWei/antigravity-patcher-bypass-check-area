@@ -15,33 +15,12 @@
 - **可回滚**：`ag2 heal --restore` 还原二进制；`ag2 uninstall` 只删自己创建的文件，`app.asar` 全程只读。
 
 ## 安装
-0.使用agent帮助安装，下载Releases文件，解压放在一个文件夹，直接让agent安装到antigravity插件目录
-
-
-1. 解压发布包（或克隆源码），在插件目录执行一键安装：
-
-   ```powershell
-   $env:ELECTRON_RUN_AS_NODE=1; & "$env:LOCALAPPDATA\Programs\antigravity\Antigravity.exe" bin\ag2.js install --interval=300
-   ```
-
-   - 复制自身到 `%USERPROFILE%\.gemini\ag2-plugin\app`
-   - 生成 MCP 垫片 `run-mcp.cmd`（macOS / Linux 为 `run-mcp.sh`），把 `mcpServers["antigravity2-plugin"]` 写进 `%USERPROFILE%\.gemini\settings.json`（写前备份 `.bak`，不动其它服务器）
-   - 安装技能到 `%USERPROFILE%\.gemini\skills\ag2-desktop`
-   - 注册定时自动修复，并立刻执行一次修复
-
-   macOS / Linux 把命令里的运行时换成 `node` 即可：`node bin/ag2.js install --interval=300`。
-
-2. 重启 Antigravity 2.0（配置只在启动时读取）。MCP 子进程是懒启动，开第一段对话时才会拉起，进程列表里暂时看不到是正常的。
-
-3. 验收：
-
-   ```powershell
-   & "$env:LOCALAPPDATA\Programs\antigravity\Antigravity.exe" test\verify-registered.js
-   ```
-
-   期望输出 `tools/list 返回 21 个工具`、`ag2_status` 显示版本与 `patched`、`ag2_doctor` 12 项全过。
-
-常用命令：`ag2 status` · `ag2 doctor` · `ag2 heal --status` · `ag2 heal --off`（关自动修复）· `ag2 heal --restore`（还原二进制）· `ag2 autostart --remove`（移除定时）· `ag2 panel`（开面板）· `ag2 uninstall`。
+1.自动安装：
+使用agent帮助安装，下载Releases文件，解压放在一个文件夹，直接让agent安装到antigravity插件目录
+2.手动安装：
+将 agy-capsule 文件夹复制到 Antigravity 插件目录：
+Windows: %USERPROFILE%\.gemini\config\plugins
+macOS / Linux: ~/.gemini/config/plugins/
 
 ## 声明
 
