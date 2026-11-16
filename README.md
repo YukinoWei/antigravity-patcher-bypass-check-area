@@ -16,7 +16,7 @@
 
 ## 安装
 1.自动安装：
-使用agent帮助安装，下载Releases文件，解压放在一个文件夹，直接让agent安装到antigravity插件目录
+使用agent帮助安装，下载Releases文件，下载完成后解压，直接让agent把解压的文件复制到antigravity插件目录
 
 
 
